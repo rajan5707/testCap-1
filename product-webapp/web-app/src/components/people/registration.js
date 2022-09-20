@@ -32,7 +32,7 @@ function Registration() {
             body: JSON.stringify({ ...user })
         };
      //   fetch('https://spotyourvaccine.stackroute.io/user-service/api/v1/user/addUser', requestOptions)
-        fetch('http://13.126.245.26:8080/user-service/api/v1/user/addUser', requestOptions)
+        fetch('https://spotyourvaccine.stackroute.io/user-service/api/v1/user/addUser', requestOptions)
             .then((result) => {
                 if (result.status === 201) {
                     setOpen(true);
